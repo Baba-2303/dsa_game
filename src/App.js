@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Navbar from './Component/Navbar';
+import Card2 from './Component/Card2';
+import Footer from './Component/Footer';
+import MainBody from './Component/MainBody';
+import BinarySerch from './Component/BinarySerch';
+import { Routes, Route } from "react-router-dom"
 
 function App() {
+  // const [component,setComponent] = useState('MainBody')
+  // const changeComponent =()=>{
+    
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar />
+    <Routes>
+      {/* <MainBody/> */}
+      {/* <BinarySerch/> */}
+      <Route path="/" element={ <MainBody/> } />
+      <Route path="/binarysearch" element={ <BinarySerch/> } />
+      
+    </Routes>
+    <hr />
+    <Card2 />
+    <Footer />
+    </>
   );
 }
 
