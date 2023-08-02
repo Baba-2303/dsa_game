@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<header>
+  <div class="navbar">
+    <nav>
+      <div class="logo"><a href="index.html"><img src="images/logo.jpg" alt="" srcset=""><span>DSA Arena</span></a>
+      </div>
+      <div id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="">Learn</a></li>
+        <a href="About.html">About</a>
+        <a href="Login.html">Login</a>
+      </div>
+      <form class="signin">
+        <input type="search" placeholder="Search...">
+        <button><img src="images/seach icon.png" alt=""></button>
+      </form>
+      <button id="nav-menu" onclick="index()"><img src="images/menu-rounded.png" alt=""></button>
+    </nav>
+  </div>
+</header>
+
+<body>
+  <div class="bs-container">
+    <div class="bs-main">
+      <div class="bs-theory">
+        <h1 class="bs-theory-head">Binary Search</h1>
+        <p class="bs-theory-para">
+          <b>In this tutorial, you will learn how Binary Search sort works. Also, you will find working examples of
+            Binary
+            Search in C, C++, Java and Python.</b>
+        </p>
+        <p class="bs-theory-para">Binary Search is a searching algorithm for finding an element's position in a sorted
+          array.</p>
+        <p class="bs-theory-para">In this approach, the element is always searched in the middle of a portion of an
+          array.
+        </p>
+        <p class="bs-theory-para bs-note">
+          Binary search can be implemented only on a sorted list of items. If the elements are not sorted already, we
+          need
+          to sort them first.
+        </p>
+      </div>
+      <div class="box-container">
+        <div class="bs-con">
+          <h1 class="bs-head">Search number : <span id="num"></span></h1>
+          <div class="bs-con1">
+            <p>Chances : </p>
+            <span class="chances"></span>
+            <span class="chances"></span>
+            <span class="chances"></span>
+            <span class="chances"></span>
+            <span class="chances"></span>
+          </div>
+        </div>
+        <div class="binarysearch">
+          <span class="box">1</span>
+          <span class="box">2</span>
+          <span class="box">3</span>
+          <span class="box">4</span>
+          <span class="box">5</span>
+          <span class="box">6</span>
+          <span class="box">7</span>
+          <span class="box">8</span>
+          <span class="box">9</span>
+          <span class="box">10</span>
+          <span class="box">11</span>
+          <span class="box">12</span>
+          <span class="box">13</span>
+          <span class="box">14</span>
+          <span class="box">15</span>
+          <span class="box">16</span>
+          <span class="box">17</span>
+          <span class="box">18</span>
+          <span class="box">19</span>
+          <span class="box">20</span>
+          <span class="box">21</span>
+          <span class="box">22</span>
+          <span class="box">23</span>
+          <span class="box">24</span>
+          <span class="box">25</span>
+          <span class="box">26</span>
+          <span class="box">27</span>
+          <span class="box">28</span>
+          <span class="box">29</span>
+          <span class="box">30</span>
+          <span class="box">31</span>
+          <span class="box">32</span>
+          <span class="box">33</span>
+          <span class="box">34</span>
+          <span class="box">35</span>
+          <span class="box">36</span>
+          <span class="box">37</span>
+          <span class="box">38</span>
+          <span class="box">39</span>
+          <span class="box">40</span>
+          <span class="box">41</span>
+          <span class="box">42</span>
+          <span class="box">43</span>
+          <span class="box">44</span>
+          <span class="box">45</span>
+          <span class="box">46</span>
+          <span class="box">47</span>
+          <span class="box">48</span>
+          <span class="box">49</span>
+          <span class="box">50</span>
+          <span class="box">51</span>
+          <span class="box">52</span>
+          <span class="box">53</span>
+          <span class="box">54</span>
+          <span class="box">55</span>
+          <span class="box">56</span>
+          <span class="box">57</span>
+          <span class="box">58</span>
+          <span class="box">59</span>
+          <span class="box">60</span>
+        </div>
+      </div>
+      <div class="bs-theory">
+        <h1 class="bs-theory-head">Binary Search</h1>
+        <p class="bs-theory-para">
+          Binary Search Algorithm can be implemented in two ways which are discussed below.
+        <ol>
+          <li class="bs-theory-para">Iterative Method</li>
+          <li class="bs-theory-para">Recursive Method</li>
+        </ol>
+        </p>
+        <p class="bs-theory-para">The recursive method follows the divide and conquer approach.</p>
+        <p class="bs-theory-para">The general steps for both methods are discussed below.
+        </p>
+        <p class="bs-theory-para bs-working">
+        <ol class="bs-theory-para">
+          <li>
+            <p>The array in which searching is to be performed is:
+            </p>
+            <div class="bs-theory-para-img">
+              <img src="https://cdn.programiz.com/sites/tutorial2program/files/binary-search-initial-array.png" alt="">
+              <p class="bs-theory-para-text">Initial array</p>
+            </div>
+          </li>
+          <li>
+            <p>Set two pointers low and high at the lowest and the highest positions respectively.
+            </p>
+            <div class="bs-theory-para-img">
+              <img src="https://cdn.programiz.com/sites/tutorial2program/files/binary-search-set-pointers.png" alt="">
+              <p class="bs-theory-para-text">Setting pointers</p>
+            </div>
+          </li>
+          <li>
+            <p>Find the middle element mid of the array ie. arr[(low + high)/2] = 6.
+            </p>
+            <div class="bs-theory-para-img">
+              <img src="https://cdn.programiz.com/sites/tutorial2program/files/binary-search-mid.png" alt="">
+              <p class="bs-theory-para-text">Mid element</p>
+            </div>
+          </li>
+          <li>If x == mid, then return mid.Else, compare the element to be searched with m.</li>
+          <li>If x > mid, compare x with the middle element of the elements on the right side of mid. This is done by
+            setting low to low = mid + 1.</li>
+          <li>
+            <p>Else, compare x with the middle element of the elements on the left side of mid. This is done by setting
+              high to high = mid - 1.</p>
+            <div class="bs-theory-para-img">
+              <img src="https://cdn.programiz.com/sites/tutorial2program/files/binary-search-find-mid.png" alt="">
+              <p class="bs-theory-para-text">Finding mid element</p>
+            </div>
+          </li>
+          <li>
+            <p>Repeat steps 3 to 6 until low meets high.</p>
+            <div class="bs-theory-para-img">
+              <img src="https://cdn.programiz.com/sites/tutorial2program/files/binary-search-mid-again.png" alt="">
+              <p class="bs-theory-para-text">Mid element</p>
+            </div>
+          </li>
+          <li>
+            <p>x = 4 is found.</p>
+            <div class="bs-theory-para-img">
+              <img src="https://cdn.programiz.com/sites/tutorial2program/files/binary-search-found.png" alt="">
+              <p class="bs-theory-para-text">Found</p>
+            </div>
+          </li>
+        </ol>
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="foot-news">
+      <h3>Subscribe to our Newsletter</h3>
+      <form action="">
+        <input type="email" id="email" name="email" placeholder="Enter your Email">
+        <input type="submit" value="Subscribe" id="email-btn">
+      </form>
+    </div>
+    <div class="foot-main">
+      <div class="foot-main-img">
+        <img src="images/instagram icon.png" alt="">
+        <img src="images/facebook icon.png" alt="">
+        <img src="images/twitter icon.png" alt="">
+        <img src="images/youtube-icon.png" alt="">
+      </div>
+      <p>Copyright © 2023 All rights reserved | made by Rajkamal Yadav</p>
+      <p>Terms & Conditions/ Privacy Policy</p>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
